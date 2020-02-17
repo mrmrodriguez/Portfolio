@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    height: 100vh;
+}
+
+.scroll-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* ____________NAVBAR____________ */
+.navbar {
+    background: rgba(0,0,0,0.85);
+}
+
+.navbar, a.navbar-brand,
+.navbar a {
+    font-size: 28px;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #169DB2;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-custom:focus .navbar-toggler-icon {
+    outline: none;
+}
+
+/* ____________HOME SCREEN____________ */
+#home{
+    background-image: url('img/background1.jfif');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.dark-overlay1 {
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+    
+.home-inner {
+    padding-top: 250px;
+}
+
+#home h1 {
+    font-size: 120px;
+    font-weight: 100;
+}
+
+button.hireMe {
+    width: 200px;
+    font-size: 32px;
+    transition: .2s;
+}
+
+button.hireMe:hover {
+    transform: scale(1.2);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+#home svg {
+    fill: rgb(243, 241, 241);
+    position: relative;
+    top: 0;
+    transition: 0.2s;
+}
+
+#home svg:hover {
+    top: 15px;
+}
+
+/* __MODAL__ */
+#modalHire {
+    background-image: url('img/modebackgrounddark.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-heading {
+    font-size: 24px;
+}
+
+#modalHire .resume {
+    font-size: 24px;
+    width: 200px;
+    transition: .2s;
+}
+
+#modalHire .resume:hover {
+    transform: scale(1.2);
+    background-color: #17A2B8;
+    border: 1px solid #17A2B8;
+}
+
+#modalHire p {
+    font-size: 24px;
+}
+
+#modalHire a {
+    text-decoration: none;
+}
+
+#modalHire .fab.fa-linkedin-in:hover,
+#modalHire .fab.fa-github:hover,
+#modalHire .fab.fa-twitter:hover {
+    color: #fff;
+}
+
+#modalHire .fab.fa-linkedin-in:hover {
+    transform: rotate(-5deg) scale(1.3);
+    -ms-transform: rotate(-5deg) scale(1.3);
+    -webkit-transform: rotate(-5deg) scale(1.3);
+}
+
+#modalHire .fab.fa-github:hover {
+    transform: rotate(10deg) scale(1.3);
+    -ms-transform: rotate(10deg) scale(1.3);
+    -webkit-transform: rotate(10deg) scale(1.3);
+}
+
+#modalHire .fab.fa-twitter:hover {
+    transform: rotate(15deg) scale(1.3);
+    -ms-transform: rotate(15deg) scale(1.3);
+    -webkit-transform: rotate(15deg) scale(1.3);
+}
+
+/* ____________PROJECTS____________ */
+#projects .static {
+    position: absolute;
+    background: white;
+}
+
+#projects .static:hover {
+    opacity: 0;
+}
+
+#projects {
+    line-height: 10px;
+}
+
+#projects h5 {
+    font-weight: 400;
+}
+
+#projects button {
+    width: 100px;
+    font-size: 18px;
+    transition: .1s;
+}
+
+#projects button:hover {
+    transform: scale(1.1);
+}
+
+/* ____________SKILLS____________ */
+.skills-container {
+    padding: 50px 50px;
+}
+
+#skills {
+    background-image: url("img/background2.jfif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    color: #fff;
+}
+
+.dark-overlay2 {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    min-height: 300px;
+    color: #fff;
+    }
+
+.skills-icons {
+    font-size: 78px;
+    transition: .5s;
+}
+
+#skills i,
+img.jquery {
+    position: relative;
+    top: 0;
+    transition: .2s;
+}
+
+#skills i:hover,
+img.jquery:hover {
+    top: -10px;
+}
+
+.fab.fa-html5:hover {
+    color: #FC490B;
+}
+
+.fab.fa-css3-alt:hover {
+    color: #2E9CD7;
+}
+
+.fab.fa-js-square:hover {
+    color: #DF9E27;
+}
+
+.fab.fa-bootstrap:hover {
+    color: #543B79;
+}
+
+.jquery {
+    filter: brightness(0) invert(1);
+    transition: .4s;
+    margin-bottom: 30px;
+}
+
+.jquery:hover {
+    filter: none;
+}
+
+/* ____________ABOUT____________ */
+.about-par {
+    max-width: 600px;
+    margin: 30px auto;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+p.about-par.lead {
+    font-size: 24px;
+}
+
+#about a.btn.btn-lg.btn-info {
+    width: 200px;
+    font-size: 24px;
+    transition: .3s;
+}
+
+#about a.btn.btn-lg.btn-info:hover {
+    transform: scale(1.1);
+}
+
+/* ____________CONTACT FORM____________ */
+#contact {
+    background-image: url('img/background3.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-position: bottom;
+}
+
+.dark-overlay3 {
+    background-color: rgba(0,0,0,0.55);
+    width: 100%;
+    min-height: 300px;
+    color: #fff;
+}
+
+#contact input,
+#contact textarea,
+textarea:focus {
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px !important;
+    margin-left: -5px !important;
+}
+
+#contact ::placeholder {
+    color: white;
+}
+
+#contact input:focus::placeholder{
+    color: transparent;
+}
+
+#contact textarea {
+    letter-spacing: 1px;
+}
+
+#contact textarea:focus {
+    color: #fff;
+}
+
+#contact button {
+    width: 200px;
+    transition: .3s;
+}
+
+#contact button:hover {
+    transform: scale(1.1);
+}
+
+#contact p {
+    font-size: 24px;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: rgb(72, 217, 240);
+}
+
+/* ____________FOOTER____________ */
+#social a {
+    text-decoration: none;
+}
+
+.links i,
+.links:visited i,
+.links:hover i {
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+}
+
+.fab.fa-twitter,
+.fab.fa-linkedin-in,
+.fab.fa-github, 
+.fab.fa-dev,
+#modalHire .fab.fa-twitter,
+#modalHire .fab.fa-linkedin-in,
+#modalHire .fab.fa-github, 
+#modalHire .fab.fa-dev {
+  -webkit-transition: -webkit-transform .1s ease-in-out;
+  -ms-transition: -ms-transform .1s ease-in-out;
+  transition: transform .1s ease-in-out;
+}
+
+.fab.fa-linkedin-in:hover {
+    color: rgb(0,147,205);
+}
+
+.fab.fa-linkedin-in:hover {
+    transform: rotate(-5deg) scale(1.5);
+    -ms-transform: rotate(-5deg) scale(1.5);
+    -webkit-transform: rotate(-5deg) scale(1.5);
+}
+
+.fab.fa-twitter:hover {
+    color: rgb(29,161,242);
+}
+.fab.fa-twitter:hover {
+    transform: rotate(15deg) scale(1.5);
+    -ms-transform: rotate(15deg) scale(1.5);
+    -webkit-transform: rotate(15deg) scale(1.5);
+}
+
+.fab.fa-dev:hover {
+    color: rgb(102, 226, 213);
+}
+
+.fab.fa-dev:hover {
+    transform: rotate(5deg) scale(1.5);
+    -ms-transform: rotate(5deg) scale(1.5);
+    -webkit-transform: rotate(5deg) scale(1.5);
+}
+
+.fab.fa-github:hover {
+    color: rgb(102, 0, 102);
+}
+
+.fab.fa-github:hover {
+    transform: rotate(10deg) scale(1.5);
+    -ms-transform: rotate(10deg) scale(1.5);
+    -webkit-transform: rotate(10deg) scale(1.5);
+}
+
+p.copyright {
+    color: white;
+}
+
+.dark-overlay4 {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    min-height: 100px;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .home-inner {
+        padding-top: 200px;
+    }
+
+    #home h1 {
+        font-size: 125px;
+        line-height: 90px;
+        margin-bottom: 50px;
+    }
+
+    #home p {
+        font-size: 50px;
+        margin-bottom: 35px;
+    }
+
+    .hireMe {
+        margin-top: 25px;
+    }
+
+    svg {
+        margin-top: 15px;
+    }
+
+    #contact h1 {
+        font-size: 50px;
+    }
+}
