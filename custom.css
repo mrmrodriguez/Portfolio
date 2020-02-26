@@ -47,9 +47,9 @@ button.navbar-toggler:focus {
     outline: none;
 }
 
-/* ____________HOME SCREEN____________ */
+/* ____________HOME____________ */
 #home {
-    background-image: url('img/background1.jfif');
+    background-image: url('img/background1.jpg');
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -75,6 +75,7 @@ button.navbar-toggler:focus {
 
 button.hireMe {
     width: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 32px;
     transition: .2s;
 }
@@ -98,7 +99,7 @@ button.hireMe:hover {
 
 /* __MODAL__ */
 #modalHire {
-    background-image: url('img/modebackgrounddark.jpeg');
+    background-image: url('img/modebackgrounddark.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -152,40 +153,16 @@ button.hireMe:hover {
 }
 
 /* ____________PROJECTS____________ */
-#projects .static {
-    position: absolute;
-    background: white;
-}
-
-#projects .static:hover {
-    opacity: 0;
-}
-
 #projects {
-    line-height: 10px;
+    padding-bottom: 50px;
 }
-
-#projects h5 {
-    font-weight: 400;
-}
-
-#projects button {
-    width: 100px;
-    font-size: 18px;
-    transition: .1s;
-}
-
-#projects button:hover {
-    transform: scale(1.1);
-}
-
 /* ____________SKILLS____________ */
 .skills-container {
-    padding: 50px 50px;
+    padding: 70px 50px;
 }
 
 #skills {
-    background-image: url("img/background2.jfif");
+    background-image: url("img/background2.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -266,7 +243,7 @@ p.about-par.lead {
 
 /* ____________CONTACT FORM____________ */
 #contact {
-    background-image: url('img/background3.jfif');
+    background-image: url('img/background3.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -310,6 +287,7 @@ textarea:focus {
 }
 
 #contact button {
+    background-color: rgba(0, 0, 0, 0.7);
     width: 200px;
     transition: .3s;
 }
@@ -412,6 +390,7 @@ p.copyright {
         right: 15px;
     }
 
+    /* ____________HOME____________ */
     .home-inner {
         padding-top: 150px;
     }
@@ -433,10 +412,11 @@ p.copyright {
     }
 
     svg {
-        margin-top: 15px;
+        /* margin-top: 15px; */
+        display: none;
     }
 
-    /* __MODAL__ */
+    /* ____________MODAL____________ */
     #modalHire {
         background-image: url('img/modebackgrounddark.jpeg');
         background-size: cover;
